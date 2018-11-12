@@ -1,0 +1,36 @@
+{
+  "name": "careershowcase-firebase-hosting",
+  "version": "1.0.0",
+  "description": "Career Showcase Firebase project's Hosting.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase serve",
+    "deploy": "firebase deploy --only hosting \"Depoying Hosting\"",
+    "deploy:ci": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting \"Depoying Hosting\"",
+    "disable": "firebase hosting:disable",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "scriptsComments": {
+    "serve": "Starts a local web server with your Firebase Hosting configuration. For Firebase Hosting, a firebase.json configuration file is required.",
+    "deploy": "Deploy Firebase Hosting content",
+    "disable": "Stop serving Firebase Hosting traffic for the active project. A \"Site Not Found\" message will be displayed at your project's Hosting URL after running this command.",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlAskalany/careershowcase-firebase-hosting.git"
+  },
+  "keywords": [
+    "career",
+    "showcase"
+  ],
+  "author": "Ahmed AlAskalany <ahmed.alaskalany@gmail.com> (https://www.alaskalany.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlAskalany/careershowcase-firebase-hosting/issues"
+  },
+  "homepage": "https://github.com/AlAskalany/careershowcase-firebase-hosting#readme",
+  "devDependencies": {
+    "firebase-tools": "^6.0.1"
+  }
+}
